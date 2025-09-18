@@ -16,8 +16,10 @@ def image_options(current_directory=True, image_folder=None):
                 current_file_path = os.path.join(image_folder_path, file)
                 all_images.append(current_file_path)
             else:
-                print("file not image")
+                print(f"file not image '{file}' ")
     else:
         print("directory empty")
+    return all_images
+    
 
 
